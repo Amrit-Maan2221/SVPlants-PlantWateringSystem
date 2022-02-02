@@ -1,0 +1,23 @@
+.maincontent {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 60rem;
+}
+
+.page-header {
+  margin-bottom: 3rem;
+}
+
+.page-header__heading {
+  margin-top: -1rem;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+
+.page-header:after {
+  margin: 4rem auto;
+  display: block;
+  content: "";
+  border-bottom: 3px solid black;
+  width: 4rem;
+}

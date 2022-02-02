@@ -1,0 +1,8 @@
+.sitefooter {
+  margin-top: 8rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  background: black;
+  color: white;
+}

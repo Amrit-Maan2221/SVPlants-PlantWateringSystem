@@ -1,0 +1,24 @@
+.siteheader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.site-title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 5rem;
+  font-weight: 200;
+}
+
+.siteheader:after {
+  display: block;
+  margin: 4rem 0;
+  content: "⚍⚌⚍";
+}
+
+.site-description {
+  font-size: 0.8rem;
+}
