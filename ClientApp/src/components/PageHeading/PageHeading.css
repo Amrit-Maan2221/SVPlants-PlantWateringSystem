@@ -1,11 +1,9 @@
-.maincontent {
-  margin: 0 auto;
-  padding: 0 1rem;
-  max-width: 60rem;
-}
-
 .page-header {
   margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .page-header__heading {

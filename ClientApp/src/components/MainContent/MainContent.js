@@ -80,7 +80,7 @@ function MainContent() {
                 <>
                     {
                         plants.map((plant) => (
-                            <article key={plant.id}>
+                            <article key={plant.id} className={((!plant.wateringStatus) && (now.getTime() - plant.lastWateringSeason) / (60 * 60 * 1000)) >= 6 ? "plant_needWater" : ""}>
                                 <div className='plants'>
                                     <figure className="plant__image">
                                         <img src='./Plant.svg' alt="Plant" loading="lazy" />
@@ -88,8 +88,8 @@ function MainContent() {
                                     <div className='plant__info'>
                                         <h1>{plant.name}</h1>
                                         <ul>
-                                            <li className="feature backpack__volume">Watering Status: <span> {plant.wateringStatus ? "Watering" : "Not Watering"}</span></li>
-                                            <li className="feature backpack__color">Last Watering Session:
+                                            <li><b>Watering Status:</b> <span> {plant.wateringStatus ? "Watering" : "Not Watering"}</span></li>
+                                            <li><b>Last Watering Session:</b>
                                                 <span>
                                                     {plant.lastWateringSeason ?
                                                         (
@@ -102,6 +102,7 @@ function MainContent() {
                                                         : " ----"}
                                                 </span>
                                             </li>
+                                            <li className={((!plant.wateringStatus) && (now.getTime() - plant.lastWateringSeason) / (60 * 60 * 1000)) >= 6 ? "waterPlantMsg" : "noMsg"} ><b>URGENTLY NEED WATER</b></li>
                                         </ul>
                                         <button id={`button_${plant.id}`} onClick={() => waterPlants(plant.id)}>{plant.wateringStatus ? "Tap here to Stop Watering Plant" : "Tap here to the Water Plant"}</button>
                                     </div>

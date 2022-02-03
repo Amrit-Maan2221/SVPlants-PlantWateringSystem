@@ -38,9 +38,6 @@ namespace PlantWater.Data
                     var secondsPassed = (long)(plantWater.WateringEndTiming / 1000 - plantWater.WateringStartTiming / 1000);
                     if (secondsPassed >= 10)
                     {
-                        DateTime dt1970 = new DateTime(1970, 1, 1);
-                        DateTime current = DateTime.Now;
-                        TimeSpan span = current - dt1970;
                         oldWateringStatus.LastWateringSeason = plantWater.WateringEndTiming;
                     }
                 }

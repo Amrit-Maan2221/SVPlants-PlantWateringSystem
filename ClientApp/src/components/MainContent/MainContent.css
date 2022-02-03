@@ -1,3 +1,9 @@
+.maincontent {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 60rem;
+}
+
 figure {
   margin: 0;
 }
@@ -23,9 +29,19 @@ figure img {
   border-bottom: 3px solid black;
 }
 
+.plant_needWater {
+  background-color: rgba(43, 255, 0, 0.192);
+  border-radius: 8%;
+  transition: 10s ease;
+}
+
+article {
+  padding: 1% 2% 0% 2%;
+}
+
 article:after {
   margin: 0 auto;
-  padding-top: 4rem;
+  padding-top: 2rem;
   display: block;
   grid-column: span 2;
   content: "";
@@ -38,7 +54,7 @@ article:after {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 50%;
+  min-width: 50%;
 }
 
 .plants ul {
@@ -78,4 +94,47 @@ article:after {
   place-items: center;
   color: red;
   text-align: center;
+}
+
+.waterPlantMsg {
+  color: red;
+  display: flex;
+  justify-content: center;
+}
+
+.noMsg {
+  display: none;
+}
+
+@media screen and (max-width: 1150px) {
+  figure img {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .plants {
+    flex-direction: column;
+    align-items: center;
+  }
+  figure img {
+    width: 300px;
+    height: 300px;
+  }
+  .plants button {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  .plant__info {
+    align-items: center;
+  }
+  .plants h1 {
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 4rem;
+  }
+  .errMsg {
+    height: 13vh;
+    font-size: 1.2rem;
+  }
 }
