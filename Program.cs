@@ -1,11 +1,19 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+// Name: Amritpal Singh
+// File Name: Program.cs
+// Date: 31 January 2022
+// Descrition: This is starting point of SV plants projects.
+
+/* SV Plants:
+  ------------------------
+ * A web application to water your plants remote.
+ * Supports watering multiple plants together
+ * You are visually alerted if you didn't watered the plant for more than six hours
+ * You cannot start watering plants right after there last watering session there is wait time of 10 sec, if you want to start watering your plants again
+*/
+
+
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 
 namespace SVPlants
 {

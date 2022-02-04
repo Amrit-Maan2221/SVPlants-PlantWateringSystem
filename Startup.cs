@@ -1,3 +1,10 @@
+// Name: Amritpal Singh
+// File Name: Startup.cs
+// Date: 31 January 2022
+// Descrition: This is where all the configuration of SV plants project is set up.
+
+
+
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;

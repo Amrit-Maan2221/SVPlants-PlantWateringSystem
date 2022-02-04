@@ -1,3 +1,10 @@
+/* 
+Programmer: Amritpal Singh
+File Name: maincontent.css
+Date: 1 February 2022
+Descrition: Contain styling for maincontent.css
+*/
+
 .maincontent {
   margin: 0 auto;
   padding: 0 1rem;
@@ -32,7 +39,7 @@ figure img {
 .plant_needWater {
   background-color: rgba(43, 255, 0, 0.192);
   border-radius: 8%;
-  transition: 10s ease;
+  transition: 5s ease;
 }
 
 article {

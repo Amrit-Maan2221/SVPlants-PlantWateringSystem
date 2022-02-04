@@ -1,3 +1,11 @@
+// Name: Amritpal Singh
+// File Name: Data.cs
+// Date: 31 January 2022
+// Descrition: This file contains the plants data for the SVPlants project. This data is just a hardcore value in real word we use database for loading data.
+
+
+
+
 using System.Collections.Generic;
 
 namespace PlantWater.Data

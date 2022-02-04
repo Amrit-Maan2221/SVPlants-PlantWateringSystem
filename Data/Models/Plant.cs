@@ -1,4 +1,8 @@
-using System;
+// Name: Amritpal Singh
+// File Name: Plants.cs
+// Date: 31 January 2022
+// Descrition: This file creates a model name Plants for SV Plants Project
+
 
 namespace PlantWater.Data
 {

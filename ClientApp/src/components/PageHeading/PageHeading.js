@@ -1,3 +1,11 @@
+// Programmer: Amritpal Singh
+// File Name: PageHeading.js
+// Date: 31 January 2022
+// Descrition: This file containe the page heading component which display heading of the page to users
+
+
+
+
 import React from 'react';
 
 import './PageHeading.css'
